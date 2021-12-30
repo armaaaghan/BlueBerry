@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "4728039c-85b5-464b-bbb8-153675a11bec",
+		"name": "BlueBerry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/read.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "App",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/read_single.php?q={{app_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"read_single.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{app_id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/categories.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"categories.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category (list of apps by categpry)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/view_categories.php?q={{app_category}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"view_categories.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{app_category}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Related Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/similar_apps.php?q={{app_category}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"similar_apps.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{app_category}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/search.php?q=test",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most popular apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/most_popular_apps.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"most_popular_apps.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Game Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/view_categories.php?q=games",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"view_categories.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "games"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top  Productivity Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/view_categories.php?q=productivity",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"view_categories.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "productivity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top  Medical Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/view_categories.php?q=productivity",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"view_categories.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "productivity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top  Finance Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/view_categories.php?q=Finance",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"view_categories.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Finance"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top  paid/free Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Blueberry/api/app/type_apps.php?q=paid",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Blueberry",
+						"api",
+						"app",
+						"type_apps.php"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "paid"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
